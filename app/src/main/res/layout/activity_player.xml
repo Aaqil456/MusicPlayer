@@ -6,6 +6,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/player_bg"
+    android:orientation="vertical"
+    android:weightSum="10"
     tools:context=".PlayerActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="7"
+       android:gravity="center"
+       android:orientation="vertical">
+       <TextView
+           android:id="@+id/txtsn"
+           android:layout_margin="20dp"
+           android:ellipsize="marquee"
+           android:marqueeRepeatLimit="marquee_forever"
+           android:padding="10dp"
+           android:singleLine="true"
+           android:text="Song Name"
+           android:textColor="@color/white"
+           android:textSize="22sp"
+           android:textAlignment="center"
+           android:textStyle="italic"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+       </TextView>
+
+       <ImageView
+           android:id="@+id/imagebiew"
+           android:layout_marginBottom="8dp"
+           android:src="@drawable/ic_music"
+           android:layout_width="250dp"
+           android:layout_height="250dp">
+
+       </ImageView>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="60dp">
+
+           <SeekBar
+               android:id="@+id/seekbar"
+               android:layout_centerInParent="true"
+               android:layout_alignParentBottom="true"
+               android:layout_margin="20dp"
+               android:layout_marginBottom="40dp"
+               android:layout_width="250dp"
+               android:layout_height="wrap_content">
+
+           </SeekBar>
+
+       </RelativeLayout>
+
+   </LinearLayout>
 
 </LinearLayout>
