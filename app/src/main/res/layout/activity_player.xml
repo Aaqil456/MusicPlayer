@@ -57,8 +57,74 @@
 
            </SeekBar>
 
+          <TextView
+              android:id="@+id/txtstart"
+              android:layout_toLeftOf="@+id/seekbar"
+              android:layout_centerInParent="true"
+              android:layout_alignParentLeft="false"
+              android:layout_marginLeft="20dp"
+              android:text="00:10"
+              android:textColor="@color/white"
+              android:textSize="14sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+          </TextView>
+
+           <TextView
+               android:id="@+id/txtsstop"
+               android:layout_toRightOf="@+id/seekbar"
+               android:layout_centerInParent="true"
+               android:layout_alignParentRight="false"
+               android:layout_marginRight="20dp"
+               android:text="04:10"
+               android:textColor="@color/white"
+               android:textSize="14sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </TextView>
+
        </RelativeLayout>
 
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <Button
+               android:id="@+id/playbtn"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:layout_centerHorizontal="true"
+               android:background="@drawable/ic_play">
+
+           </Button>
+
+           <Button
+               android:id="@+id/btnnext"
+               android:layout_toRightOf="@id/playbtn"
+               android:layout_marginTop="15dp"
+               android:background="@drawable/ic_next"
+               android:layout_width="50dp"
+               android:layout_height="50dp">
+           </Button>
+
+           <Button
+               android:id="@+id/btnprev"
+               android:layout_toLeftOf="@id/playbtn"
+               android:layout_marginTop="15dp"
+               android:background="@drawable/ic_skip_previous"
+               android:layout_width="50dp"
+               android:layout_height="50dp">
+           </Button>
+
+       </RelativeLayout>
    </LinearLayout>
 
 </LinearLayout>
